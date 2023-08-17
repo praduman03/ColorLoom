@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-color: #191919;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainCont {
+  min-width: 200px;
+  width: max-content;
+}
+
+#mainCont > h1 {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+#picker_btn {
+  margin: 20px;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #191919;
+}
+
+#result {
+  list-style: none;
+  grid-gap: 10px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#result > li {
+  cursor: pointer;
+  padding: 2px 5px;
+  font-weight: bolder;
+  font-size: 15px;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0.5px 0.5px 0 black, -0.5px -0.5px 0 black, 0.5px -0.5px 0 black,
+    -0.5px 0.5px 0 black;
+}
+
+.errorLabel {
+  color: black;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+#ClearButton {
+  padding: 5px 7px;
+  border-radius: 10px;
+  background-color: white;
+  color: 19191;
+  /* border: 1px solid #191919; */
+  font-size: 15px;
+  width: 100%;
+  text-align: center;
+  margin: 0px 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
